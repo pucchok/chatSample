@@ -58,7 +58,7 @@ const deleteTodo = () => {
       </select>
       <input
         type="date"
-        class="input input-bordered w-36"
+        class="input input-bordered w-38"
         :value="props.todo.date"
         disabled
       />
