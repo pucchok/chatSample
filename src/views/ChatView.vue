@@ -13,8 +13,8 @@ const displayTodo = computed(() => {
 })
 </script>
 <template>
-  <div class="flex flex-col animate-slide-in-right" v-for="todo in displayTodo" :key="todo.id">
-    <div class="flex-grow">
+  <div class="animate-slide-in-right">
+    <div class="flex flex-col responsive-height" v-for="todo in displayTodo" :key="todo.id">
       <div class="chat chat-end mr-4 mt-4">
         <div class="chat-image avatar">
           <div class="w-[60px] relative">
@@ -37,8 +37,12 @@ const displayTodo = computed(() => {
         </div>
       </div>
     </div>
+    <TheFooter />
   </div>
-  <TheFooter />
 </template>
 
-<style></style>
+<style scoped>
+.responsive-height {
+  height: calc(100dvh - 68px);
+}
+</style>
