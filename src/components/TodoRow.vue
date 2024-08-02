@@ -56,12 +56,7 @@ const deleteTodo = () => {
         <option value="DOING">DOING</option>
         <option value="DONE">DONE</option>
       </select>
-      <input
-        type="date"
-        class="input input-bordered w-38"
-        :value="props.todo.date"
-        disabled
-      />
+      <input type="date" class="input input-bordered w-38" :value="props.todo.date" disabled />
       <div>
         <button class="btn btn-error" @click="deleteTodo">削除</button>
       </div>

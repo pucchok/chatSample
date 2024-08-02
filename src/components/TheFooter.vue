@@ -16,7 +16,7 @@ const post = () => {
 }
 </script>
 <template>
-  <div class="fixed bottom-0 flex w-full bg-black p-2">
+  <div class="fixed bottom-0 flex w-full bg-black p-2 animate-slide-in-bottom">
     <input
       type="text"
       placeholder="タスクメモを入力してください"

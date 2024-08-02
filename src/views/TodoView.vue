@@ -5,7 +5,7 @@ import { useTodoStore } from '@/stores/todos'
 const todoStore = useTodoStore()
 </script>
 <template>
-  <div v-for="todoItem in todoStore.todos" :key="todoItem.id" class="flex mx-2">
+  <div v-for="todoItem in todoStore.todos" :key="todoItem.id" class="flex mx-2 animate-slide-in-right">
     <TodoRow :todo='todoItem' />
   </div>
 </template>
