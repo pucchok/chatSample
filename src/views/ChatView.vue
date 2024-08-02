@@ -13,7 +13,7 @@ const displayTodo = computed(() => {
 })
 </script>
 <template>
-  <div class="flex flex-col animate-slide-in-left" v-for="todo in displayTodo" :key="todo.id">
+  <div class="flex flex-col animate-slide-in-right" v-for="todo in displayTodo" :key="todo.id">
     <div class="flex-grow">
       <div class="chat chat-end mr-4 mt-4">
         <div class="chat-image avatar">
