@@ -13,8 +13,8 @@ const displayTodo = computed(() => {
 })
 </script>
 <template>
-  <div class="animate-slide-in-right">
-    <div class="flex flex-col responsive-height" v-for="todo in displayTodo" :key="todo.id">
+  <div class="animate-slide-in-right responsive-height">
+    <div class="flex flex-col" v-for="todo in displayTodo" :key="todo.id">
       <div class="chat chat-end mr-4 mt-4">
         <div class="chat-image avatar">
           <div class="w-[60px] relative">
